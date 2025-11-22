@@ -12,10 +12,13 @@ class Description extends \Magento\Catalog\Block\Product\View\Description
     public function toHtml()
     {
         $originalHtml = parent::toHtml();
-        $customText = __('Descripción modificada por Vendor_HelloWorld');
-        
-        return $originalHtml . '<div class="vendor-helloworld-custom">' . 
-               $this->escapeHtml($customText) . '</div>';
+        if ($this->getNameInLayout() === 'product.info.description') {
+            $customText = __('Descripción modificada por Vendor_HelloWorld');
+            return $originalHtml . '<div class="vendor-helloworld-custom">' .
+                $this->escapeHtml($customText) .
+                '</div>';
+        }
+        return $originalHtml;
     }
 }
 
