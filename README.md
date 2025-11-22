@@ -57,13 +57,13 @@ php bin/magento cache:clean
 php bin/magento cache:flush
 ```
 
-## objetivo del repositorio
+## Objetivo del repositorio
 
-Este proyecto demuestra conocimientos clave en:
+Este módulo demuestra conocimientos clave en:
 
-Creación de módulos Magento 2
-Registro de controladores frontend
-Uso de di.xml para realizar overrides
-Extensión de bloques nativos
-Manipulación del método toHtml()
-Buenas prácticas de desarrollo en Magento 2
+- **Creación de módulos en Magento 2**
+- **Registro de controladores frontend**
+- **Uso de `di.xml` para realizar overrides**
+- **Extensión de bloques nativos**
+- **Manipulación del método `toHtml()`**
+- **Buenas prácticas de desarrollo en Magento 2**
